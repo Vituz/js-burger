@@ -15,7 +15,6 @@ body{
 
 .container{
     width: 50%;
-    background-color: #FDBB40;
 }
 
 /***********
@@ -34,6 +33,7 @@ h1{
 
 header .container{
     position: relative;
+    background-color: #FDBB40;
 }
 
 header img {
@@ -43,6 +43,44 @@ header img {
     right: -2rem;
 }
 
- /**********
- /HEADER 
- **********/
+/**********
+/HEADER 
+**********/
+
+/**********
+MAIN 
+**********/
+
+main .container{
+    background-color: white;
+    height: 600px;
+    padding: 3rem;
+}
+
+#burger_name{
+    border: none;
+    font-size: 2rem;
+}
+
+/* Igredients */
+.ingredients{
+    height: 195px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ingredients > div > img{
+    vertical-align: middle;
+}
+
+.container h2{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+/* /Ingredients */
+
+/**********
+/MAIN 
+**********/
