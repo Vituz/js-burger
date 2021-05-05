@@ -33,3 +33,36 @@ var ingElement = document.querySelector('.ingredients');
 insertIngredient(ingredientsEl, ingElement);
 
 
+document.querySelector("button").addEventListener("click", function(){
+
+    // Stabiliamo un prezzo base per il panino
+    var price = 8;
+
+    // Calcoliamo il prezzo in base agli ingredienti selezionati
+    var check = document.querySelectorAll("input[type='checkbox']");
+    console.log(check);
+
+    var sumIngredients = null;
+
+    for(var i = 0; i < check.length; i++){
+
+        var element = check[i];
+
+        if(element.checked){
+            sumIngredients += Number(element.getAttribute("data-price"));
+        }
+        
+    }
+
+    console.log(sumIngredients);
+
+    var totalPrice = document.getElementById("price");
+
+    totalPrice = price + sumIngredients;
+
+    console.log(totalPrice);
+
+});
+
+
+
