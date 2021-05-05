@@ -58,6 +58,9 @@ document.querySelector("button").addEventListener("click", function(){
 
     var coupon = [
         "abf34CDD",
+        "abf38CDD",
+        "abf33CfmD",
+        "abgk45kHH",
     ];
 
      // Stabiliamo il prezzo totale del panino
