@@ -56,13 +56,39 @@ document.querySelector("button").addEventListener("click", function(){
 
     console.log(sumIngredients);
 
-    var totalPrice = document.getElementById("price");
+    var coupon = [
+        "abf34CDD",
+    ];
 
-    totalPrice = price + sumIngredients;
+     // Stabiliamo il prezzo totale del panino
+
+    var totalPrice =  (price + sumIngredients).toFixed(2);
+
+    var insCoupon = document.getElementById("coupon");
+
+    console.log(insCoupon.value);
+
+    for(var i = 0; i < coupon.length; i++){
+
+        if(insCoupon.value === coupon[i]){
+            totalPrice -= (totalPrice * 0.20);
+            console.log("primo if");
+
+        } else {
+            totalPrice;
+            console.log("else");
+        }
+
+    }
+
+    console.log(insCoupon);
+    // Stampiamo il prezzo totale del panino
+    document.getElementById("price").innerHTML = "$ " + totalPrice;
 
     console.log(totalPrice);
 
 });
+
 
 
 
