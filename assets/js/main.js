@@ -74,7 +74,7 @@ document.querySelector("button").addEventListener("click", function(){
     for(var i = 0; i < coupon.length; i++){
 
         if(insCoupon.value === coupon[i]){
-            totalPrice -= (totalPrice * 0.20);
+            totalPrice = (totalPrice - (totalPrice * 0.20)).toFixed(2);
             console.log("primo if");
 
         } else {
