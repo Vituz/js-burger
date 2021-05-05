@@ -29,15 +29,26 @@
     <main>
         <div class="container">
                
+            <!-- Burger Name -->
             <input type="text" id="burger_name" placeholder="Name Your Burger">
 
+            <!-- Ingredients -->
             <h2>ingredients</h2>
 
             <div class="ingredients">
                 
             </div>
 
-            
+            <!-- Discount -->
+            <div id="discount">
+                <label for="coupon">Discount Coupon</label>
+                <input type="text" name="coupon" id="coupon" placeholder="12354ABCDEF">
+            </div>
+    
+            <div class="button_container">
+                <button id="calculate">calculate</button>
+            </div>
+                        
         </div>
 
     </main>
@@ -45,6 +56,11 @@
 
     <!-- Footer -->
     <footer>
+        <div class="container d_flex">
+            <span>Your price</span>
+
+            <span id="price"></span>
+        </div>
 
     </footer>
     <!-- /Footer -->
